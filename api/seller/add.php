@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die();
     }
 
-    // checking mails here
+    // checking if product is saved here
 
     if ($product->add_products()) {
         echo json_encode(['success' => 1, 'message' => 'Product is saved']);
